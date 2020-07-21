@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba</title>
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<p id="demo"></p>
+	<script>
+		function Nombre(a, b){
+			return "Hola, me llamo: " + a + " y tengo: " + b + " años";
+		}
+		console.log (Nombre("Agustin", "17")) ;
+
+		var yo = [ "Agustin" ,"Surila" , 17];
+		var info = "Hola, mi nombre es: " + yo [0] + " ,mi apellido es: " + yo[1] + " y tengo: " + yo[2] + " años."
+		console.log(info);
+
+		var usted = {nombre:"Gaston",apellido:"Algo", edad:17};
+		var info2 = "tu nombre es: " + usted.nombre + " ,Tu apellido es: " + usted.apellido + " y tu edad es: " + usted.edad + " años."
+		console.log(info2);
+
+		var a, b, c ;
+			a = "11";
+			b = "22";
+			c = a * b;
+
+		console.log(c);
+
+		function calculo(a, b){
+			return a>=b;
+		}
+		console.log(calculo(11, 12));
+
+		var algo = "Hola, soy agustin \"Soy un adolescente\" y tengo 17 años";
+		console.log(algo);
+
+		var fecha = new Date();
+		var titulo = "El dia de hoy es: " + fecha;
+		document.getElementById("demo").innerHTML = fecha.toUTCString();
+
+		var i, txt;
+		i = 1;
+		txt = "";
+		while(i<11){
+			txt += "<br>El numero es: " + i;
+			i++;
+		}
+		document.getElementById("demo").innerHTML = txt;
+	</script>
+	
+ 
+	<div>
+		<header>
+			<h1> Auchaman</h1> 
+		</header>
+			<nav>
+				<ul>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Info</a></li>
+					<li><a href="#">Deporte</a></li>
+				</ul>
+				<button><a href="#">Ayuda</a></button>
+			</nav>
+	</div>
+	<div>
+		<table>
+
+			<h1 id="Lista">Lista de Usuarios</h1>
+
+			<tr>
+					<th>Nombre </th>
+					<th>Apellido </th>
+					<th>Edad </th>
+					<th colspan="2">Telefono</th>
+				</tr>
+				<tr>
+					<td>Juan</td>
+					<td>Minujin</td>
+					<td>22</td>
+					<td>323</td>
+					<td>232</td>
+				</tr>		
+				<tr>
+					<td>Carlos</td>
+					<td>Espert</td>
+					<td>46</td>
+					<td>434</td>
+					<td>343</td>
+				</tr>					
+		</table>
+	</div>
+	<div>
+			<h1 id="titulo1">Titulo</h1>
+			<p id="formato1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in  reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<!--Tipo texto-->
+		<form>
+			<label for="nombre">Nombre</label><br>
+			<input type="text" id="nombre" name="nombre"><br>
+			<label for="apellido">Apellido</label><br>
+			<input type="text" id="nombre" name="nombre"><br>
+			</form><br>
+			<!-- Tipo radio-->
+		<h1 id="genero1">Genero</h1>
+		<form id="radio1">
+			<input type="radio" id="Hombre" name="genero" value="hombre">
+			<label for="Hombre">Hombre</label><br>
+			<input type="radio" id="Mujer" name="genero" value="mujer">
+			<label for="Mujer">Mujer</label><br>
+			<input type="radio" id="Puto" name="genero" value="Puto">
+			<label for="Puto">Puto</label><br>
+		</form><br>
+		<!--Tipo submit// Tengo que aprender php-->
+		<form action="">
+			<label for="nombre2"> Nombre</label><br>
+			<input type="text" id="nombre2" name="nombre"><br>
+			<label for="apellido2"> Apellido</label><br>
+			<input type="text" id="apellido2" name="apellido"><br><br>
+			<input type="submit" name="submit">
+		</form>
+</body>
+</html> 
