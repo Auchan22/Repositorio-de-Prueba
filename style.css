@@ -25,7 +25,6 @@ ul {
 
 ul li {
 	display: inline-block;
-	float: left;
 	line-height: 100px;
 }
 
@@ -42,9 +41,6 @@ ul li a:hover{
 	color:red;
 }
 
-.despliegue:hover {
-
-}
 
 button {
 	float: right;
