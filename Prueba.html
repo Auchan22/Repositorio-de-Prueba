@@ -42,14 +42,21 @@
 		var titulo = "El dia de hoy es: " + fecha;
 		document.getElementById("demo").innerHTML = fecha.toUTCString();
 
-		var i, txt;
+		var i, txet;
 		i = 1;
-		txt = "";
+		txet = "";
 		while(i<11){
-			txt += "<br>El numero es: " + i;
+			txet += "<br>El numero es: " + i;
 			i++;
 		}
-		document.getElementById("demo").innerHTML = txt;
+		document.getElementById("demo").innerHTML = txet;
+
+		var nombres = ["Agustin", "Elias" , "Juan"];
+		var x;
+		for(x of nombres){
+			document.write(x + "<br>");
+		}
+
 	</script>
 	
  
@@ -72,25 +79,25 @@
 			<h1 id="Lista">Lista de Usuarios</h1>
 
 			<tr>
-					<th>Nombre </th>
-					<th>Apellido </th>
-					<th>Edad </th>
-					<th colspan="2">Telefono</th>
-				</tr>
-				<tr>
-					<td>Juan</td>
-					<td>Minujin</td>
-					<td>22</td>
-					<td>323</td>
-					<td>232</td>
-				</tr>		
-				<tr>
-					<td>Carlos</td>
-					<td>Espert</td>
-					<td>46</td>
-					<td>434</td>
-					<td>343</td>
-				</tr>					
+				<th>Nombre </th>
+				<th>Apellido </th>
+				<th>Edad </th>
+				<th colspan="2">Telefono</th>
+			</tr>
+			<tr>
+				<td>Juan</td>
+				<td>Minujin</td>
+				<td>22</td>
+				<td>323</td>
+				<td>232</td>
+			</tr>		
+			<tr>
+				<td>Carlos</td>
+				<td>Espert</td>
+				<td>46</td>
+				<td>434</td>
+				<td>343</td>
+			</tr>					
 		</table>
 	</div>
 	<div>
@@ -119,7 +126,7 @@
 			<label for="Puto">Puto</label><br>
 		</form><br>
 		<!--Tipo submit// Tengo que aprender php-->
-		<form action="">
+		<form method="POST">
 			<label for="nombre2"> Nombre</label><br>
 			<input type="text" id="nombre2" name="nombre"><br>
 			<label for="apellido2"> Apellido</label><br>
