@@ -42,7 +42,7 @@ ul li a:hover{
 }
 
 
-button {
+#ayuda {
 	float: right;
 	font-family: "Comfortaa";
 	padding: 6px;
@@ -61,7 +61,7 @@ button a {
 	text-decoration: none;
 }
 
-button:hover {
+#ayuda:hover {
 	background-color: red;
 }
 
